@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Localização Atual</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 400px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #fff;
+      color: #0077ff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .output {
+      margin-top: 20px;
+      font-size: 18px;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Obter Localização Atual</h1>
+    <button onclick="getLocation()">Mostrar Latitude e Longitude</button>
+    <div class="output" id="output"></div>
+  </div>
+
+  <script>
+    function getLocation() {
+      const output = document.getElementById('output');
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            output.innerHTML = `🌐 Latitude: <b>${lat}</b><br/>🌐 Longitude: <b>${lon}</b>`;
+          },
+          (error) => {
+            output.innerHTML = `❌ Erro ao obter localização: ${error.message}`;
+          }
+        );
+      } else {
+        output.innerHTML = "❌ Geolocalização não suportada pelo navegador.";
+      }
+    }
+  </script>
+</body>
+</html>
