@@ -1,0 +1,168 @@
+@media (max-width: 414px) {
+  body {
+    background: #a64968;
+    width: 100vw;
+    height: 400vh;
+  }
+
+  main .kokoro {
+    top: 14vh;
+  }
+
+  main .title {
+    top: 16vh;
+  }
+
+  main .img1 {
+    width: 50vw;
+  }
+
+  main .img2 {
+    position: absolute;
+    top: 82vh;
+    left: 41%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    width: 18vw;
+    filter: drop-shadow(0.3rem 0 0.3rem #000000);
+    display: block;
+  }
+
+  main .img2-1 {
+    position: absolute;
+    top: 82vh;
+    left: 41%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    width: 18vw;
+    filter: drop-shadow(0.3rem 0 0.3rem #000000);
+    display: none;
+  }
+
+  main .img2-2 {
+    position: absolute;
+    cursor: pointer;
+    top: 88vh;
+    left: 48%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    width: 5vw;
+    filter: drop-shadow(0.3rem 0 0.3rem #000000);
+    display: none;
+  }
+
+  .content1 {
+    position: absolute;
+    top: 101vh;
+    width: 100%;
+    height: 134vh;
+  }
+
+  .content1 .img3 {
+    position: absolute;
+    cursor: pointer;
+    top: 4vh;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    width: 90vw;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .content1 .gloomygrove1 {
+    top: 57.8vh;
+    left: 77.4%;
+    font-size: 0.9rem;
+  }
+
+  .content1 .img4 {
+    position: absolute;
+    cursor: pointer;
+    top: 63.3vh;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    width: 90vw;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .content1 .gloomygrove2 {
+    top: 116.8vh;
+    left: 77.4%;
+    font-size: 0.9rem;
+  }
+
+  .content1 audio {
+    position: absolute;
+    bottom: 6.5vh;
+    left: 50%;
+    transform: translate(-50%);
+    width: 17rem;
+    height: 2rem;
+  }
+
+  .content1 .description {
+    position: absolute;
+    font-weight: 100;
+    bottom: 3.5vh;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.95rem;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .content2 {
+    top: 235vh;
+    width: 100vw;
+    height: 190vh;
+    background-image: url(../img/bgletter.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: 100% 100%;
+    filter: brightness(55%);
+  }
+
+  .text .cute-ghots {
+    position: absolute;
+    width: 20vw;
+    top: 82vh;
+    left: 73%;
+  }
+
+  .text .name-font {
+    position: absolute;
+    top: 71vh;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    color: #c9d1d9;
+    font-family: "Nanum Pen Script", cursive !important;
+    font-size: 2.2rem;
+    font-style: italic;
+  }
+
+  .text span {
+    position: absolute;
+    top: 94vh;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    color: #c9d1d9;
+    font-size: 1.03rem;
+    font-weight: 300;
+    padding: 2vh;
+  }
+
+  .up {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 417vh;
+    right: 1rem;
+    cursor: pointer;
+  }
+}

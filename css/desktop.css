@@ -1,0 +1,113 @@
+@media screen and (min-width: 1400px) {
+  main .img2 {
+    position: absolute;
+    top: 82vh;
+    left: 48%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    width: 5vw;
+    filter: drop-shadow(0.3rem 0 0.3rem #000000);
+    display: none;
+  }
+
+  main .img2-1 {
+    position: absolute;
+    top: 82vh;
+    left: 41%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    width: 5vw;
+    filter: drop-shadow(0.3rem 0 0.3rem #000000);
+    display: none;
+  }
+
+  main .img2-2 {
+    position: absolute;
+    cursor: pointer;
+    top: 88vh;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    width: 5vw;
+    filter: drop-shadow(0.3rem 0 0.3rem #000000);
+    display: block;
+  }
+
+  .content1 {
+    height: 100vh;
+  }
+
+  .content1 .gloomygrove1 {
+    position: absolute;
+    color: transparent;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.35rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    top: 81.5vh;
+    left: 41.1%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    transition: all ease-in-out 0.2s;
+  }
+
+  .content1 .gloomygrove2 {
+    position: absolute;
+    color: transparent;
+    cursor: pointer;
+    font-size: 1.35rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    top: 81.5vh;
+    left: 81%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    transition: all ease-in-out 0.2s;
+  }
+
+  .content1 audio {
+    position: absolute;
+    bottom: 5.5vh;
+    left: 50%;
+    transform: translate(-50%);
+    width: 17rem;
+    height: 2rem;
+  }
+
+  .content1 .description {
+    position: absolute;
+    font-weight: 100;
+    bottom: 2.5vh;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.95rem;
+    color: #000;
+  }
+
+  .content2 {
+    position: absolute;
+    top: 201vh;
+    width: 100vw;
+    height: 200vh;
+  }
+
+  .text .cute-ghots {
+    position: absolute;
+    width: 7.5vw;
+    top: 47vh;
+    left: 50%;
+  }
+
+  .text .name-font {
+    top: -20vh;
+  }
+
+  .text span {
+    top: -5vh;
+    padding: 66vh;
+  }
+
+  .up {
+    top: 392vh;
+  }
+}
